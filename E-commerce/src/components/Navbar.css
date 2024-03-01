@@ -1,27 +1,35 @@
 /* Navbar.css */
 .navbar {
-    width: 100%;
-    height: 80px;
-    background-color: gray;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  .links {
-    display: flex;
-    align-items: center;
-    margin-right:50px;
-  }
-  
-  .links a {
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-  }
-  
-  
-  .links a + a {
-    margin-left: 20px;
-  }
-  
+  width: 100%;
+  height: 80px;
+  background-color:gray;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.links a + a {
+  margin-left: 20px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black; /* Change background color when sticky */
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
