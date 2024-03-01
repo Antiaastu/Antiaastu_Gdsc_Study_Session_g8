@@ -19,7 +19,7 @@ const Listpeople = () => {
   return (
     <div>
       <h2>Group Members</h2>
-      <table className="member-table"> {/* Add className for styling */}
+      <table className="member-table"> 
         <thead>
           <tr>
             <th>ID</th>
@@ -27,7 +27,7 @@ const Listpeople = () => {
           </tr>
         </thead>
         <tbody>
-          {/* Use .map() to iterate over the group members array and generate table rows */}
+          
           {groupMembers.map(member => (
             <tr key={member.id}>
               <td>{member.id}</td>
