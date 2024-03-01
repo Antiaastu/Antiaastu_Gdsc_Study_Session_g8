@@ -1,0 +1,73 @@
+/* Shop.css */
+.shopTitle {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .products {
+    max-width: 1200px; /* Adjust the width to match the maximum width of the container */
+    margin: 0 auto; /* Center the products horizontally */
+    width: 100%; /* Ensure the products take up the full width of the container */
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px 0; /* Add gap between grid items */
+    place-items: center;
+  }
+  
+  .product {
+    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product img {
+    width: 100%; /* Make the image fill the container */
+    max-height: 100%; /* Ensure the image maintains its aspect ratio */
+    border-radius: 15px; /* Apply border radius to the image */
+  }
+  
+  .product .description {
+    text-align: center;
+  }
+  
+  .product:hover {
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  .addToCartBttn {
+    background-color: transparent;
+    border: 2px solid rgb(19, 19, 19);
+    min-width: 100px;
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+  
+  .addToCartBttn:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Media query for screens with width around 400px */
+  @media (max-width: 400px) {
+    .products {
+      grid-template-columns: 1fr; /* Display one column for smaller screens */
+    }
+  
+    .product {
+      width: 90%; /* Adjust product width for smaller screens */
+      margin: 10px auto; /* Center product horizontally and add some margin */
+    }
+  }
+  @media (min-width: 400px) and (max-width: 700px) {
+    .products {
+      grid-template-columns: repeat(2, 1fr); /* Display two columns for medium-sized screens */
+    }
+  }  
