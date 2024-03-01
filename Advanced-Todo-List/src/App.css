@@ -1,0 +1,78 @@
+/* src/styles.css */
+#root{
+  margin:0 auto;
+  background-color:gray
+  
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image:url('todo.jpeg')
+}
+#add:hover{
+  background-color:gray;
+}
+#delete:hover{
+  background-color:gray;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-container input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.input-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-item span {
+  flex: 1;
+  font-size: 16px;
+}
+
+.todo-item button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
